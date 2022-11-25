@@ -12,7 +12,18 @@ body{
     width: 100%;
     overflow-x: hidden;
 }
+html{
+    scroll-behavior: smooth;
+}
 header{
+    height: 150px;
+}
+.nav-bar-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,31 +77,6 @@ nav a {
 }
 
 
-.burger{
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-}
-.burger div{
-    height: 2px;
-    width: 30px;
-    background: #6E07F3;
-    cursor: pointer;
-  
-}
-
-@media only screen and (max-width: 600px){
-    .burger{
-        display: flex;
-    }
-    .nav-ul{
-        display: none;
-    }
-}
-
-
-
-
 /* top section */
 .top-section{
     display: flex;
@@ -117,4 +103,9 @@ nav a {
 .avatar{
     margin-top: 20px;
     margin-bottom: -50px;
+}
+.link-section{
+    height: 100vh;
+    padding-top: 150px;
+    text-align: center;
 }
