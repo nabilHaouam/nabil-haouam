@@ -19,10 +19,6 @@ header{
     height: 150px;
 }
 .nav-bar-container{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
     background: #ffffff;
     display: flex;
     justify-content: space-between;
@@ -45,6 +41,10 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+nav i {
+    display: none;
+    color: #6E07F3;
 }
 .nav-ul{
     display: flex;
@@ -75,8 +75,39 @@ nav a {
     background: #6E07F3;
     color: #ffffff;
 }
+.mobile-contact {
+    display: none;
+}
 
+@media screen and (max-width: 768px){
+    nav{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: #ffff;
+       
+    }
+    nav i {
+        display: block;
+    }
+    .nav-ul{
+        font-size: 14px;
+        padding: 10px 0;
+    }
+    .nav-ul li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-btn{
+        display: none;
+    }
+    .mobile-contact{
+        display: flex;
+    }
 
+}
 /* top section */
 .top-section{
     display: flex;
@@ -106,6 +137,5 @@ nav a {
 }
 .link-section{
     height: 100vh;
-    padding-top: 150px;
     text-align: center;
 }
