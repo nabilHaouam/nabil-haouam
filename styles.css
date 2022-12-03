@@ -42,16 +42,17 @@ nav{
     justify-content: space-around;
     align-items: center;
 }
-nav i {
+.nav-ul i {
     display: none;
     color: #6E07F3;
 }
+
 .nav-ul{
     display: flex;
     align-items: center;
     justify-content: space-around;
     list-style: none;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 nav a {
@@ -65,9 +66,10 @@ nav a {
 .contact-btn {
     color: #6E07F3;
     font-weight: 900;
+    font-size: 25px;
     border: none;
     border-radius: 50px;
-    border: 1px solid #6E07F3;
+    border: 2px solid #6E07F3;
     background: #ffffff;
     transition: all 0.3s ease-in ;
 }
@@ -88,7 +90,7 @@ nav a {
         background: #ffff;
        
     }
-    nav i {
+    .nav-ul i {
         display: block;
     }
     .nav-ul{
@@ -135,7 +137,19 @@ nav a {
     margin-top: 20px;
     margin-bottom: -50px;
 }
+#portfolio{
+    background-color: transparent;
+}
+#about{
+    background-color: #6E07F3;
+}
+
 .link-section{
     height: 100vh;
     text-align: center;
+}
+.link-section h1 {
+    padding: 50px 0;
+    font-weight: 600;
+    font-size: 32px;
 }
