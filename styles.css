@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -8,8 +9,8 @@
     overflow-x: hidden;
 }
 body{
-    font-family: 'Gruppo', cursive;
-    font-weight: 600;
+    font-family: 'Fira Code', monospace;
+    font-weight: 300;
     width: 100%;
     
 }
@@ -143,7 +144,7 @@ main{
 }
 .top-section h4{
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 400;
     margin: 20px 0;
 }
 .avatar{
@@ -151,18 +152,31 @@ main{
     margin-bottom: -50px;
 }
 #portfolio{
-    background-color: transparent;
+    background: linear-gradient(180deg , #6E07F3, #ffffff);
+ 
 }
 #about{
     background-color: #6E07F3;
-}
+    color: #ffff;
 
+}
 .link-section{
-    height: 100vh;
     text-align: center;
+    padding: 80px 10%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5em;
 }
 .link-section h1 {
     padding: 50px 0;
     font-weight: 600;
     font-size: 32px;
+}
+
+.projects{
+    border-radius: 35px;
+    background: #ffffff;
+    box-shadow: 8px 11px 75px -3px rgba(0,0,0,0.75);
+    width: 80vw;
 }
