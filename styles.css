@@ -119,6 +119,12 @@ nav a {
     .mobile-contact{
         display: flex;
     }
+    .top-section h1 {
+        padding: 0 10px;
+    }
+    .top-section h4{
+        padding: 0 10px;
+    }
 
 }
 /* top section */
@@ -168,15 +174,20 @@ main{
     font-weight: 500;
     line-height: 1.5em;
 }
+
 .link-section h1 {
     padding: 50px 0;
     font-weight: 600;
     font-size: 32px;
 }
-
 .projects{
     border-radius: 35px;
     background: #ffffff;
     box-shadow: 8px 11px 75px -3px rgba(0,0,0,0.75);
     width: 80vw;
+}
+@media screen and (max-width : 768px){
+    .link-section{
+        font-size: 18px;
+    }
 }
